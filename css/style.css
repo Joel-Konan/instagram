@@ -101,13 +101,14 @@
     height: 100vh;
     background-color: var(--color-white);
     margin-left: 260px;
+    padding: 0 60px;
 }
 
 /* My NavBar*/
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 20px 70px;
+    padding: 20px 0px;
 }
 
 nav input{
@@ -132,5 +133,104 @@ nav button{
     border: none;
     border-radius: 50%;
     background: url('../img/user.png') no-repeat;
+    background-size: cover;
+}
+
+/* My featured */
+.box{
+    margin-top: 35px;
+    display: flex;
+}
+
+.left__part{
+    flex: 2;
+}
+
+.right__Part{
+    flex: 1;
+}
+
+.card-items1{
+    display: flex;
+    margin: 30px 0;
+}
+
+.card-items1 .card1, .card-items1 .card2, .card-items1 .card3, .card-items1 .card4{
+    flex: 1;
+    height: 250px;
+    border-radius: 7px;
+    margin-right: 35px;
+}
+
+.card-items1 .card1{
+    background: url('../img/1.jpg') no-repeat;
+    background-size: cover;
+}
+
+.card-items1 .card2{
+    background: url('../img/2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.card-items1 .card3{
+    background: url('../img/3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.card-items1 .card4{
+    background: url('../img/4.jpg') no-repeat;
+    background: cover;
+}
+
+.card-items2{
+    display: flex;
+    margin: 30px 0;
+    align-content: space-between;
+}
+
+.card-row1, .card-row2{
+    display: flex;
+    width: 100%;
+}
+
+.card-row1 .card1, .card-row1 .card2, .card-row1 .card3{
+    flex: 1;
+    height: 250px;
+    border-radius: 7px;
+    margin-right: 30px;
+}
+
+.card-row1 .card1{
+    background: url('../img/5.jpg') no-repeat;
+    background-size: cover;
+}
+
+.card-row1 .card2{
+    background: url('../img/6.jpg') no-repeat;
+    background-size: cover;
+}
+
+.card-row1 .card3{
+    background: url('../img/7.jpg') no-repeat;
+    background-size: cover;
+}
+
+.card-row2 .card1, .card-row2 .card2, .card-row2 .card3{
+    flex: 1;
+    height: 250px;
+    border-radius: 7px;
+    margin-right: 30px;
+}
+
+.card-row2 .card1{
+    background: url('../img/8.jpg') no-repeat;
+    background-size: cover;
+}
+.card-row2 .card2{
+    background: url('../img/9.jpg') no-repeat;
+    background-size: cover;
+}
+.card-row2 .card3{
+    background: url('../img/10.jpg') no-repeat;
     background-size: cover;
 }
