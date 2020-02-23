@@ -1,15 +1,21 @@
 :root{
     --color-rose: #ff4e6a;
     --color-black: black;
-    --color-grey: grey;
+    --color-grey: #9ba0a4;
     --color-white: white;
-    --colo-light-grey: #ccc;
+    --colo-light-grey: #fbfbfb;
 }
+
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 /* My Sidebar Styles*/
@@ -22,12 +28,15 @@
 
 .sidebar__logo{
     padding: 28px;
-    border-bottom: 1px solid var(--color-grey);
+    border-bottom: 1px solid #ccc;
 }
 
 .sidebar__logo h4{
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    font-family: 'Cookie', sans-serif;
 }
 
 .info__user{
@@ -38,11 +47,21 @@
 }
 
 .user_circle{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    border: 1.4px solid var(--color-rose);
+    border: 1.5px solid var(--color-rose);
     margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white__circle{
+    width: 65px;
+    height: 65px;
+    border: 2.8px solid var(--color-white);
+    border-radius: 50%;
     background: url('../img/user.png') no-repeat;
     background-size: cover;
 }
@@ -87,6 +106,10 @@
     transition: all .3s;
 }
 
+.sidebar__menu ul li:hover{
+    cursor: pointer;
+}
+
 .sidebar__menu ul li a{
     color: var(--color-grey);
     text-decoration: none;
@@ -113,9 +136,9 @@ nav{
 
 nav input{
     width: 20%;
-    padding: 12px 8px;
+    padding: 10px 8px;
     border-radius: 7px;
-    border: 1px solid var(--colo-light-grey);
+    border: 1px solid #ccc;
 }
 
 nav button{
@@ -125,6 +148,12 @@ nav button{
     font-size: 18px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+nav button:hover{
+    background-color: rgb(180, 46, 46);
 }
 
 .nav__circle{
@@ -142,24 +171,42 @@ nav button{
     display: flex;
 }
 
+/* Left part */
 .left__part{
     flex: 2;
+    margin-right: 20px;
 }
 
-.right__Part{
-    flex: 1;
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.title h1{
+    font-size: 22px;
+}
+
+.title p{
+    color: var(--color-grey);
+    font-size: 18px;
+    border: 1px solid var(--color-grey);
+    border-radius: 7px;
+    padding: 8px 18px;
+    background-color: var(--colo-light-grey);
 }
 
 .card-items1{
     display: flex;
-    margin: 30px 0;
+    margin: 45px 0;
 }
 
 .card-items1 .card1, .card-items1 .card2, .card-items1 .card3, .card-items1 .card4{
     flex: 1;
     height: 250px;
     border-radius: 7px;
-    margin-right: 35px;
+    margin-right: 25px;
 }
 
 .card-items1 .card1{
@@ -183,21 +230,22 @@ nav button{
 }
 
 .card-items2{
-    display: flex;
-    margin: 30px 0;
-    align-content: space-between;
+    margin: 45px 0;
 }
 
 .card-row1, .card-row2{
     display: flex;
-    width: 100%;
+}
+
+.card-row1{
+    margin-bottom: 30px;
 }
 
 .card-row1 .card1, .card-row1 .card2, .card-row1 .card3{
     flex: 1;
     height: 250px;
     border-radius: 7px;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .card-row1 .card1{
@@ -217,9 +265,9 @@ nav button{
 
 .card-row2 .card1, .card-row2 .card2, .card-row2 .card3{
     flex: 1;
-    height: 250px;
+    height: 190px;
     border-radius: 7px;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .card-row2 .card1{
@@ -233,4 +281,68 @@ nav button{
 .card-row2 .card3{
     background: url('../img/10.jpg') no-repeat;
     background-size: cover;
+}
+.right__Part{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    width: 270px;
+}
+
+.illustration{
+    width: 270px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    background: url('../img/user.png') no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.follow p{
+    flex: 1;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.follow span{
+    color: var(--color-grey);
+}
+
+.para{
+    color: var(--color-grey);
+    margin-bottom: 35px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.para a{
+    color: var(--color-black);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info{
+    margin-bottom: 50px;
+}
+
+.info h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.info span{
+    color: var(--color-grey);
+    font-size: 18px;
 }
