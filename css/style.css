@@ -27,7 +27,7 @@ body{
 }
 
 .sidebar__logo{
-    padding: 28px;
+    padding: 13px 28px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -36,7 +36,7 @@ body{
     letter-spacing: 2px;
     font-weight: normal;
     margin-bottom: 25px;
-    font-family: 'Cookie', sans-serif;
+    font-family: 'Cookie', cursive, sans-serif;
 }
 
 .info__user{
@@ -83,7 +83,8 @@ body{
 }
 .follow div{
     flex: 1;
-    margin-right: 5px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .follow div p{
@@ -207,6 +208,7 @@ nav button:hover{
     height: 250px;
     border-radius: 7px;
     margin-right: 25px;
+    box-shadow: 0 8px 8px var(--color-grey);
 }
 
 .card-items1 .card1{
@@ -246,6 +248,8 @@ nav button:hover{
     height: 250px;
     border-radius: 7px;
     margin-right: 25px;
+    box-shadow: 0 8px 8px var(--color-grey);
+
 }
 
 .card-row1 .card1{
@@ -268,6 +272,8 @@ nav button:hover{
     height: 190px;
     border-radius: 7px;
     margin-right: 25px;
+    box-shadow: 0 8px 8px var(--color-grey);
+
 }
 
 .card-row2 .card1{
