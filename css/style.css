@@ -27,7 +27,7 @@ body{
 }
 
 .sidebar__logo{
-    padding: 13px 28px;
+    padding: 10px 28px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -35,7 +35,7 @@ body{
     font-size: 27px;
     letter-spacing: 2px;
     font-weight: normal;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     font-family: 'Cookie', cursive, sans-serif;
 }
 
@@ -51,7 +51,7 @@ body{
     height: 75px;
     border-radius: 50%;
     border: 1.5px solid var(--color-rose);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,18 +68,18 @@ body{
 
 .info__user h5{
     font-size: 17px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 }
 
 .info__user p{
     color: var(--colo-grey);
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-size: 13px;
 }
 
 .follow{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .follow div{
     flex: 1;
@@ -97,13 +97,12 @@ body{
 }
 
 .sidebar__menu{
-    padding: 28px;
+    padding: 12px 28px;
 }
 
 .sidebar__menu ul li{
     list-style: none;
-    padding: 15px 0;
-    margin-bottom: 8px;
+    padding: 7px 0;
     transition: all .3s;
 }
 
@@ -113,6 +112,7 @@ body{
 
 .sidebar__menu ul li a{
     color: var(--color-grey);
+    font-size: 16px;
     text-decoration: none;
 }
 
