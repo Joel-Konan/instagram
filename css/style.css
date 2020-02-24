@@ -6,7 +6,10 @@
     --colo-light-grey: #fbfbfb;
 }
 
-
+/*General*/
+input:focus{
+    outline:none;
+}
 
 *{
     margin: 0;
@@ -35,7 +38,7 @@ body{
     font-size: 27px;
     letter-spacing: 2px;
     font-weight: normal;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     font-family: 'Cookie', cursive, sans-serif;
 }
 
@@ -102,7 +105,7 @@ body{
 
 .sidebar__menu ul li{
     list-style: none;
-    padding: 7px 0;
+    padding: 10px 0;
     transition: all .3s;
 }
 
@@ -131,19 +134,29 @@ body{
 /* My NavBar*/
 nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
+    height: 80px;
 }
 
 nav input{
     width: 20%;
-    padding: 10px 8px;
+    padding: 8px;
     border-radius: 7px;
     border: 1px solid #ccc;
+    display: inline-flex;
+}
+
+.nav_left{
+    width: 260px;
+    align-items: center;
+    display: flex;
 }
 
 nav button{
-    padding: 10px 15px;
+    margin-right: 18px;
+    padding: 8px 15px;
     background-color: var(--color-rose);
     color: var(--color-white);
     font-size: 18px;
@@ -158,6 +171,7 @@ nav button:hover{
 }
 
 .nav__circle{
+    display: inline-flex;
     height: 40px;
     width: 40px;
     border: none;
@@ -168,7 +182,7 @@ nav button:hover{
 
 /* My featured */
 .box{
-    margin-top: 35px;
+    margin-top: 25px;
     display: flex;
 }
 
@@ -200,12 +214,12 @@ nav button:hover{
 
 .card-items1{
     display: flex;
-    margin: 45px 0;
+    margin: 30px 0;
 }
 
 .card-items1 .card1, .card-items1 .card2, .card-items1 .card3, .card-items1 .card4{
     flex: 1;
-    height: 250px;
+    height: 220px;
     border-radius: 7px;
     margin-right: 25px;
     box-shadow: 0 8px 8px var(--color-grey);
@@ -232,7 +246,7 @@ nav button:hover{
 }
 
 .card-items2{
-    margin: 45px 0;
+    margin: 40px 0;
 }
 
 .card-row1, .card-row2{
@@ -245,7 +259,7 @@ nav button:hover{
 
 .card-row1 .card1, .card-row1 .card2, .card-row1 .card3{
     flex: 1;
-    height: 250px;
+    height: 220px;
     border-radius: 7px;
     margin-right: 25px;
     box-shadow: 0 8px 8px var(--color-grey);
@@ -269,7 +283,7 @@ nav button:hover{
 
 .card-row2 .card1, .card-row2 .card2, .card-row2 .card3{
     flex: 1;
-    height: 190px;
+    height: 170px;
     border-radius: 7px;
     margin-right: 25px;
     box-shadow: 0 8px 8px var(--color-grey);
@@ -299,8 +313,9 @@ nav button:hover{
 }
 
 .illustration{
-    width: 270px;
-    height: 300px;
+    width: 220px;
+    height: 270px;
+    margin: 0 auto;
     border: none;
     border-radius: 8px;
     background: url('../img/user.png') no-repeat;
@@ -312,6 +327,7 @@ nav button:hover{
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 
@@ -319,6 +335,7 @@ nav button:hover{
     flex: 1;
     margin: 10px 0;
     font-size: 17px;
+    text-align: center;
 }
 
 .follow span{
@@ -327,9 +344,10 @@ nav button:hover{
 
 .para{
     color: var(--color-grey);
-    margin-bottom: 35px;
+    margin-bottom: 28px;
     line-height: 22px;
     font-size: 14px;
+    text-align: center;
 }
 
 .para a{
@@ -340,12 +358,12 @@ nav button:hover{
 }
 
 .info{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .info h3{
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .info span{
